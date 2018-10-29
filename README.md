@@ -3,7 +3,7 @@
 2. [Input Dataset](README.md#input-dataset)
 3. [Instructions](README.md#instructions)
 4. [Output](README.md#output)
-5. [Instructions to run the program](README.md#instructions-to-submit-your-solution)
+5. [Instructions to run the program](README.md#instructions-to-run-the-program)
 
 # Problem
 
