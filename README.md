@@ -128,6 +128,6 @@ The directory structure for your repo should look like this:
 # Instructions to run the program
 * Copy the input data into file "/input/h1b_input.csv"
 * Execute the script "run.sh" 
-* Output will be aavailable in below two files.
+* Output will be available in two files.
       ./output/top_10_occupations.txt 
       ./output/top_10_states.txt
