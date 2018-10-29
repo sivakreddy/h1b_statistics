@@ -1,10 +1,9 @@
 # Table of Contents
 1. [Problem](README.md#problem)
 2. [Input Dataset](README.md#input-dataset)
-3. [Instructions](README.md#instructions)
-4. [Output](README.md#output)
-5. [Instructions to run the program](README.md#instructions-to-run-the-program)
-6. [Limitations](README.md#Limitations)
+3. [Output](README.md#output)
+4. [Instructions to run the program](README.md#instructions-to-run-the-program)
+5. [Limitations](README.md#Limitations)
 
 # Problem
 
@@ -20,12 +19,6 @@ Raw data could be found [here](https://www.foreignlaborcert.doleta.gov/performan
 For your convenience we converted the Excel files into a semicolon separated (";") format and placed them into this Google drive [folder](https://drive.google.com/drive/folders/1Nti6ClUfibsXSQw5PUIWfVGSIrpuwyxf?usp=sharing). However, do not feel limited to test your code on only the files we've provided on the Google drive 
 
 **Note:** Each year of data can have different columns. Check **File Structure** docs before development. 
-
-# Instructions
-
-We designed this coding challenge to assess your coding skills and your understanding of computer science fundamentals. They are both prerequisites of becoming a data engineer. To solve this challenge you might pick a programing language of your choice (preferably Python, Scala, Java, or C/C++ because they are commonly used and will help us better assess you), but you are only allowed to use the default data structures that come with that programming language (you may use I/O and other standard libraries). For example, you can code in Python, **but you should not use Pandas or other external libraries**. 
-
-***The objective here is to see if you can implement the solution using basic data structure building blocks and software engineering best practices (by writing clean, modular, and well-tested code).*** 
 
 # Output 
 
