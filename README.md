@@ -4,6 +4,7 @@
 3. [Instructions](README.md#instructions)
 4. [Output](README.md#output)
 5. [Instructions to run the program](README.md#instructions-to-run-the-program)
+6. [Limitations](README.md#Limitations)
 
 # Problem
 
@@ -131,3 +132,12 @@ The directory structure for your repo should look like this:
 * Output will be available in two files.
       ./output/top_10_occupations.txt 
       ./output/top_10_states.txt
+      
+# Limitations
+```
+Below are allowed column names in the input file.If new input fileis used, make sure that below column names are used.
+      * Case Number --	LCA_CASE_NUMBER or CASE_NUMBER
+      * Case Status	-- STATUS or CASE_STATUS
+      * Specialization Name --	LCA_CASE_SOC_NAME or SOC_NAME
+      * Work Location --	WORKSITE_STATE or LCA_CASE_WORKLOC1_STATE
+```
