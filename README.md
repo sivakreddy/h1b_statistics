@@ -93,18 +93,6 @@ TX;1;10.0%
 WA;1;10.0%
 ``` 
 
-# Tips on getting an interview
-
-## What we are looking at
-As a data engineer, it’s important that you write clean, well-tested, well-documented code that scales for a large amount of data. For this reason, it’s important to ensure that your solution works well for a large number of records.
-Your solution should safisfy the following requirements:
-* Repo follows the required repo directory structure
-* `run.sh` script works as is in our environment and correct results are generated. If your code needs to be compilied before being executed, you must modify this script to include both compiling and executing your code
-* The code is well-commented
-* `README.md` contains Problem, Approach and Run instructions sections
-
-You may write your solution in any mainstream programming language, such as C, C++, C#, Go, Java, Python, Ruby, or Scala. 
-Once your solution satisfies all requirements listed above, submit a link of your Github or Bitbucket repo with your source code.
 
 
 ## Repo directory structure
@@ -136,34 +124,6 @@ The directory structure for your repo should look like this:
                   |   |   └── top_10_occupations.txt
                   |   |   └── top_10_states.txt
 ```
-**Don't fork this repo** and don't use this `README` instead of your own. The content of `src` does not need to be a single file called `h1b-counting.py`, which is only an example. Instead, you should include your own source files and give them expressive names.
-
-## Testing your directory structure and output format
-
-To make sure that your code has the correct directory structure and the format of the output files are correct, we have included a test script called `run_tests.sh` in the `insight_testsuite` folder.
-
-The tests files are stored in `.csv` format under the `insight_testsuite/tests` folder. Each test should have a separate folder with an `input` folder and `h1b_input.csv` file and an `output` folder with the two requested output files.
-
-You can run the test with the following command from within the `insight_testsuite` folder:
-
-    insight_testsuite~$ ./run_tests.sh 
-
-On a failed test, the output of `run_tests.sh` should look like:
-
-    [FAIL]: test_1
-    [Thu Mar 30 16:28:01 PDT 2017] 0 of 1 tests passed
-
-On success:
-
-    [PASS]: test_1
-    [Thu Mar 30 16:25:57 PDT 2017] 1 of 1 tests passed
-
-
-One test has been provided as a way to check your formatting and simulate how we will be running tests when you submit your solution. We urge you to write your own additional tests. `test_1` is only intended to alert you if the directory structure or the output for this test is incorrect.
-
-Your submission must pass at least the provided test in order to pass the coding challenge.
-
-For a limited time we also are making available a <a href="http://ec2-18-210-131-67.compute-1.amazonaws.com/test-my-repo-link">website</a> that will allow you to simulate the environment in which we will test your code. It has been primarily tested on Python code but could be used for Java and C++ repos. Keep in mind that if you need to compile your code (e.g., javac, make), that compilation needs to happen in the run.sh file of your code repository. For Python programmers, you are able to use Python2 or Python3 but if you use the later, specify python3 in your run.sh script.
 
 # Instructions to run the program
 * Copy the input data into file "/input/h1b_input.csv"
