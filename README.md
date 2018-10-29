@@ -3,10 +3,7 @@
 2. [Input Dataset](README.md#input-dataset)
 3. [Instructions](README.md#instructions)
 4. [Output](README.md#output)
-5. [Tips on getting an interview](README.md#tips-on-getting-an-interview)
-6. [Instructions to submit your solution](README.md#instructions-to-submit-your-solution)
-7. [FAQ](README.md#faq)
-8. [Questions?](README.md#questions?)
+5. [Instructions to run the program](README.md#instructions-to-submit-your-solution)
 
 # Problem
 
@@ -117,7 +114,7 @@ The directory structure for your repo should look like this:
       ├── README.md 
       ├── run.sh
       ├── src
-      │   └──h1b_counting.py
+      │   └──h1b_analysis.py
       ├── input
       │   └──h1b_input.csv
       ├── output
@@ -168,55 +165,9 @@ Your submission must pass at least the provided test in order to pass the coding
 
 For a limited time we also are making available a <a href="http://ec2-18-210-131-67.compute-1.amazonaws.com/test-my-repo-link">website</a> that will allow you to simulate the environment in which we will test your code. It has been primarily tested on Python code but could be used for Java and C++ repos. Keep in mind that if you need to compile your code (e.g., javac, make), that compilation needs to happen in the run.sh file of your code repository. For Python programmers, you are able to use Python2 or Python3 but if you use the later, specify python3 in your run.sh script.
 
-# Instructions to submit your solution
-* To submit your entry please use the link you received in your coding challenge invite email
-* You will only be able to submit through the link one time 
-* Do NOT attach a file - we will not admit solutions which are attached files 
-* Use the submission box to enter the link to your GitHub or Bitbucket repo ONLY
-* Link to the specific repo for this project, not your general profile
-* Put any comments in the `README.md` inside your project repo, not in the submission box
-* We are unable to accept coding challenges that are emailed to us 
-
-# FAQ
-
-**Which Github link should I submit?**
-You should submit the URL for the top-level root of your repository. For example, this repo would be submitted by copying the URL https://github.com/InsightDataScience/h1b_statistics into the appropriate field on the application. Do NOT try to submit your coding challenge using a pull request, which would make your source code publicly available.
-
-**Do I need a private Github repo?**
-No, you may use a public repo, there is no need to purchase a private repo. You may also submit a link to a Bitbucket repo if you prefer.
-
-**May I use R, Matlab, or other analytics programming languages to solve the challenge?**
-No. It's important that your implementation scales to handle large amounts of data. While many of our Fellows have experience with R and Matlab, applicants have found that these languages are unable to process data in a scalable fashion, so you must consider another language.
-
-**May I use distributed technologies like Hadoop or Spark?**
-No. Your code will be tested on a single machine, so using these technologies will negatively impact your solution. We're not testing your knowledge on distributed computing, but rather on computer science fundamentals and software engineering best practices.
-
-**What sort of system should I use to run my program on (Windows, Linux, Mac)?**
-You may write your solution on any system, but your source code should be portable and work on all systems. Additionally, your run.sh must be able to run on either Unix or Linux, as that's the system that will be used for testing. Linux machines are the industry standard for most data engineering teams, so it is helpful to be familiar with this. If you're currently using Windows, we recommend installing a virtual Unix environment, such as VirtualBox or VMWare, and using that to develop your code. Otherwise, you also could use tools, such as Cygwin or Docker, or a free online IDE such as Cloud9.
-
-**How fast should my program run?**
-While there are no strict performance guidelines to this coding challenge, we will consider the amount of time your program takes when grading the challenge. Therefore, you should design and develop your program in the optimal way (i.e. think about time and space complexity instead of trying to hit a specific run time value).
-
-**Will you email me if my code doesn't run?**
-Unfortunately, we receive hundreds of submissions in a very short time and are unable to email individuals if their code doesn't compile or run. We will do everything we can to properly test your code, but this requires good documentation. More so, we have provided a test suite so you can confirm that your directory structure and format are correct.
-
-**Can I use a database engine?**
-While a database engine can be used to complete this coding challenge, we are looking to see how well you program so please do not submit code that relies on a database engine for this challenge. 
-
-**What should the format of the output be?**
-In order to be tested correctly, you must use the format described above. You can ensure that you have the correct format by using the testing suite we've included.
-
-**Should I check if the files in the input directory are text files or non-text files(binary)?**
-No, for simplicity you may assume that all of the files in the input directory are text files, with the format as described above.
-
-**Can I use an IDE like Eclipse or IntelliJ to write my program?**
-Yes, you can use whatever tools you want - as long as your run.sh script correctly runs the relevant target files and creates the expected files in the output directory.
-
-**What should be in the input directory?**
-You can put any text file you want in the directory since our testing suite will replace it. Indeed, using your own input files would be quite useful for testing. The file size limit on Github is 100 MB so you won't be able to include the larger sample input files in your input directory.
-
-**How long will it take for me to hear back from you about my submission?**
-We receive hundreds of submissions and try to evaluate them all in a timely manner. We try to get back to all applicants within two or three weeks of submission, but if you have a specific deadline that requires expedited review, please email us at cc@insightdataengineering.com.
-
-# Questions?
-Re-read this README first and if you can't find an answer to your question, Email us at cc@insightdataengineering.com
+# Instructions to run the program
+* Copy the input data into file "/input/h1b_input.csv"
+* Execute the script "run.sh" 
+* Output will be aavailable in below two files.
+      ./output/top_10_occupations.txt 
+      ./output/top_10_states.txt
